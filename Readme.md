@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Max Bubnov](https://up.htmlacademy.ru/htmlcss/28/user/582743).
-* Наставник: https://up.htmlacademy.ru/htmlcss/28/user/614881.
+* Наставник: [Андрей Корейкин](https://up.htmlacademy.ru/htmlcss/28/user/614881).
 
 ---
 
