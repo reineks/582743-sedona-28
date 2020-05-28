@@ -13,22 +13,22 @@
         <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип города Седона">
       </a>
       <ul>
-        <li><a href="">Информация</a></li>
-        <li><a href="">Фото и Видео</a></li>
-        <li><a href="">Карта Штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+        <li><a href="" aria-label="Переход в раздел Информация">Информация</a></li>
+        <li><a href="" aria-label="Переход в раздел Фото и видео">Фото и Видео</a></li>
+        <li><a href="" aria-label="Переход в раздел Карта штата">Карта Штата</a></li>
+        <li><a href="" aria-label="Переход в раздел Гостиницы">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <h1>Поиска жилья в городе "Седона"</h1>
+    <h1 class="visually-hidden">Информация о городе "Седона"</h1>
     <section>
-      <h2>Седона</h2>
+      <h2 class="visually-hidden">Седона</h2>
       <img src="https://via.placeholder.com/150x100" alt="Вид на местную природу">
       <img src="img/intro-welcome.svg" width="456" height="350"  alt="Приветствие">
     </section>
     <section>
-      <h2>Преимущества</h2>
+      <h2 class="visually-hidden">Преимущества</h2>
       <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <ol>
@@ -76,34 +76,52 @@
       </ol>
     </section>
     <section>
-      <h2>Бронирование</h2>
+      <h2 class="visually-hidden">Бронирование</h2>
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-      <button>Поиск гостиницы в Седоне</button>
+      <button type="button" aria-label="Переход в раздел указания данных для поиска гостиницы">Поиск гостиницы в Седоне</button>
+      <br>
+      <br>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <label for="arrival-date">Дата заезда:</label>
+      <input type="text" name="arrival" id="arrival-date" placeholder="24 апреля 2017" aria-label="Внести дату заезда в номер" required>
+      <br>
+      <br>
+      <label for="departure-date">Дата выезда:</label>
+      <input type="text" name="departure" id="departure-date" placeholder="4 июля 2017" aria-label="Внести дату выезда из номера" required>
+      <br>
+      <br>
+      <label for="adult-amount">Взрослые:</label>
+      <input type="number" value="2" min="0" step="1" id="adult-amount" name="adult" aria-label="Указать количество взрослых">
+      <label for="children-amount">Дети:</label>
+      <input type="number" min="0" step="1" id="children-amount" name="children" aria-label="Указать количество детей">
+      <br>
+      <br>
+      <button type="submit" aria-label="Отправить указанные данные и показать результаты поиска">Найти</button>
+      </form>
     </section>
     <section>
-      <h2>Расположение города Седона</h2>
+      <h2 class="visually-hidden">Расположение города Седона</h2>
       <img src="img/map.jpg" width="1199" height="594" alt="Карта расположения города">
     </section>
   </main>
   <footer>
-    <h2>Контакты</h2>
     <p>#Visitsedona</p>
-    <a href="tel:+74956660266">Тел:+7(495)666-02-66</a>
-    <h2>Социальные сети</h2>
+    <a href="tel:+74956660266" aria-label="Совершить звонок по номеру телефона">Тел:+7(495)666-02-66</a>
+    <h2 class="visually-hidden">Социальные сети</h2>
     <ul>
       <li>
-        <a href=""><img src="img/twitter.svg" width="16" height="15" alt="Twitter"></a>
+        <a href="" aria-label="Перейти в аккаунт города в Twitter"><img src="img/twitter.svg" width="16" height="15" alt="Twitter"></a>
       </li>
       <li>
-        <a href=""><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a>
+        <a href="" aria-label="Перейти в аккаунт города в Facebook"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a>
       </li>
       <li>
-        <a href=""><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a>
+        <a href="" aria-label="Перейти в аккаунт города в YouTube"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a>
       </li>
     </ul>
     <p>Website by</p>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
+    <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на сайт разработчика сайта HTML Academy">
       <img src="img/logo-htmlacademy.svg" width="113" height="39" alt="Логотип разработчика сайта"></a>
   </footer>
 </body>
