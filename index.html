@@ -25,7 +25,7 @@
     <section>
       <h2 class="visually-hidden">Седона</h2>
       <img src="https://via.placeholder.com/150x100" alt="Вид на местную природу">
-      <img src="img/intro-welcome.svg" width="456" height="350"  alt="Приветствие">
+      <img src="img/intro-welcome.svg" width="456" height="350" alt="Приветствие">
     </section>
     <section>
       <h2 class="visually-hidden">Преимущества</h2>
@@ -79,25 +79,23 @@
       <h2 class="visually-hidden">Бронирование</h2>
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-      <button type="button" aria-label="Переход в раздел указания данных для поиска гостиницы">Поиск гостиницы в Седоне</button>
-      <br>
-      <br>
+      <button type="button" aria-label="Показать форму поиска гостиниц">Поиск гостиницы в Седоне</button>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
-      <label for="arrival-date">Дата заезда:</label>
-      <input type="text" name="arrival" id="arrival-date" placeholder="24 апреля 2017" aria-label="Внести дату заезда в номер" required>
-      <br>
-      <br>
-      <label for="departure-date">Дата выезда:</label>
-      <input type="text" name="departure" id="departure-date" placeholder="4 июля 2017" aria-label="Внести дату выезда из номера" required>
-      <br>
-      <br>
-      <label for="adult-amount">Взрослые:</label>
-      <input type="number" value="2" min="0" step="1" id="adult-amount" name="adult" aria-label="Указать количество взрослых">
-      <label for="children-amount">Дети:</label>
-      <input type="number" min="0" step="1" id="children-amount" name="children" aria-label="Указать количество детей">
-      <br>
-      <br>
-      <button type="submit" aria-label="Отправить указанные данные и показать результаты поиска">Найти</button>
+        <label for="arrival-date">Дата заезда:</label>
+        <input type="text" id="arrival-date" placeholder="24 апреля 2017" aria-label="Ввести дату заезда в номер" required>
+        <button type="button" aria-label="Календарь"></button>
+        <label for="departure-date">Дата выезда:</label>
+        <input type="text" id="departure-date" placeholder="4 июля 2017" aria-label="Ввести дату выезда из номера" required>
+        <button type="button" aria-label="Календарь"></button>
+        <label for="adult-amount">Взрослые:</label>
+        <button type="button" aria-label="Уменьшить количество взрослых"></button>
+        <input type="number" value="2" min="0" step="1" id="adult-amount" aria-label="Указать количество взрослых">
+        <button type="button" aria-label="Увеличить количество взрослых"></button>
+        <label for="children-amount">Дети:</label>
+        <button type="button" aria-label="Уменьшить количество детей"></button>
+        <input type="number" value="0" min="0" step="1" id="children-amount" aria-label="Указать количество детей">
+        <button type="button" aria-label="Увеличить количество детей"></button>
+        <button type="submit" aria-label="Отправить указанные данные и показать результаты поиска">Найти</button>
       </form>
     </section>
     <section>
@@ -111,13 +109,16 @@
     <h2 class="visually-hidden">Социальные сети</h2>
     <ul>
       <li>
-        <a href="" aria-label="Перейти в аккаунт города в Twitter"><img src="img/twitter.svg" width="16" height="15" alt="Twitter"></a>
+        <a href="" aria-label="Перейти в аккаунт города в Twitter"><img src="img/twitter.svg" width="16" height="15"
+            alt="Twitter"></a>
       </li>
       <li>
-        <a href="" aria-label="Перейти в аккаунт города в Facebook"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a>
+        <a href="" aria-label="Перейти в аккаунт города в Facebook"><img src="img/fb-icon.svg" width="12" height="22"
+            alt="Facebook"></a>
       </li>
       <li>
-        <a href="" aria-label="Перейти в аккаунт города в YouTube"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a>
+        <a href="" aria-label="Перейти в аккаунт города в YouTube"><img src="img/youtube.svg" width="20" height="16"
+            alt="YouTube"></a>
       </li>
     </ul>
     <p>Website by</p>
