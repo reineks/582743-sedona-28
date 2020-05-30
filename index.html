@@ -80,21 +80,21 @@
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
       <button type="button" aria-label="Показать форму поиска гостиниц">Поиск гостиницы в Седоне</button>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <form action="https://echo.htmlacademy.ru/" method="post">
         <label for="arrival-date">Дата заезда:</label>
         <input type="text" id="arrival-date" placeholder="24 апреля 2017" aria-label="Ввести дату заезда в номер" required>
-        <button type="button" aria-label="Календарь"></button>
+        <button type="button" aria-label="Открыть календарь для выбора даты"></button>
         <label for="departure-date">Дата выезда:</label>
         <input type="text" id="departure-date" placeholder="4 июля 2017" aria-label="Ввести дату выезда из номера" required>
-        <button type="button" aria-label="Календарь"></button>
+        <button type="button" aria-label="Открыть календарь для выбора даты"></button>
         <label for="adult-amount">Взрослые:</label>
-        <button type="button" aria-label="Уменьшить количество взрослых"></button>
+        <button type="button" aria-label="Уменьшить количество взрослых">-</button>
         <input type="number" value="2" min="0" step="1" id="adult-amount" aria-label="Указать количество взрослых">
-        <button type="button" aria-label="Увеличить количество взрослых"></button>
+        <button type="button" aria-label="Увеличить количество взрослых">+</button>
         <label for="children-amount">Дети:</label>
-        <button type="button" aria-label="Уменьшить количество детей"></button>
+        <button type="button" aria-label="Уменьшить количество детей">-</button>
         <input type="number" value="0" min="0" step="1" id="children-amount" aria-label="Указать количество детей">
-        <button type="button" aria-label="Увеличить количество детей"></button>
+        <button type="button" aria-label="Увеличить количество детей">+</button>
         <button type="submit" aria-label="Отправить указанные данные и показать результаты поиска">Найти</button>
       </form>
     </section>

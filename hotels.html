@@ -23,7 +23,44 @@
   <main>
     <h1 class="visually-hidden">Поиск гостиниц</h1>
     <section>
-      <h2 class="visually-hidden">Фильтры</h2>
+      <h2 class="visually-hidden">Фильтры выбора гостиниц</h2>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <p>Инфраструктура:</p>
+        <ul>
+          <li><input type="checkbox" id="pool-checkbox" aria-label="Выбрать бассейн" checked></li>
+          <li><label for="pool-checkbox">Бассейн</label></li>
+          <li><input type="checkbox" id="parking-checkbox" aria-label="Выбрать парковку" disabled></li>
+          <li><label for="parking-checkbox">Парковка</label></li>
+          <li><input type="checkbox" id="wifi-checkbox" aria-label="Выбрать wi-fi"></li>
+          <li><label for="wifi-checkbox">wi-fi</label></li>
+        </ul>
+        <p>Тип жилья:</p>
+        <ul>
+          <li><input type="checkbox" id="hotel-checkbox" aria-label="Выбрать гостиницу" checked>
+          <li> <label for="hotel-checkbox">Гостиница</label>
+          <li><input type="checkbox" id="motel-checkbox" aria-label="Выбрать мотель" checked>
+          <li><label for="motel-checkbox">Мотель</label>
+          <li><input type="checkbox" id="apartaments-checkbox" aria-label="Выбрать апартаменты" checked>
+          <li><label for="apartaments-checkbox">Апартаменты</label>
+        </ul>
+        <div>
+        <p>Стоимость в сутки (Р):</p>
+        <p>"От 0"</p>
+        <p>"До 3000"></p>
+        </div>
+        <button type="submit" aria-label="Отправить указанные данные и показать результаты поиска">Показать</button>
+        <p>Найдено: 3</p>
+      </form>
+      <aside>
+        <h2>Сортировка:</h2>
+        <ul>
+          <li><a href="hotels.html" aria-label="Сортировать по цене">По цене</a></li>
+          <li><a href="hotels.html" aria-label="Сортировать по типу">По типу</a></li>
+          <li><a href="hotels.html" aria-label="Сортировать по рейтингу">По рейтингу</a></li>
+          <li><a href="hotels.html" aria-label="Сортировать по возрастанию">По возрастанию</a></li>
+          <li><a href="hotels.html" aria-label="Сортировать по убыванию">По убыванию</a></li>
+        </ul>
+      </aside>
     </section>
     <section>
       <h2 class="visually-hidden">Результаты поиска</h2>
@@ -60,13 +97,16 @@
     <a href="tel:+74956660266" aria-label="Совершить звонок по номеру телефона">Тел:+7(495)666-02-66</a>
     <ul>
       <li>
-        <a href="" aria-label="Перейти в аккаунт города в Twitter"><img src="img/twitter.svg" width="16" height="15" alt="Twitter"></a>
+        <a href="" aria-label="Перейти в аккаунт города в Twitter"><img src="img/twitter.svg" width="16" height="15"
+            alt="Twitter"></a>
       </li>
       <li>
-        <a href="" aria-label="Перейти в аккаунт города в Facebook"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a>
+        <a href="" aria-label="Перейти в аккаунт города в Facebook"><img src="img/fb-icon.svg" width="12" height="22"
+            alt="Facebook"></a>
       </li>
       <li>
-        <a href="" aria-label="Перейти в аккаунт города в YouTube"><img src="img/youtube.svg" width="20" height="16" alt="YouTube"></a>
+        <a href="" aria-label="Перейти в аккаунт города в YouTube"><img src="img/youtube.svg" width="20" height="16"
+            alt="YouTube"></a>
       </li>
     </ul>
     <p>Website by</p>
