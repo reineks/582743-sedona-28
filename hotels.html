@@ -25,28 +25,28 @@
     <section>
       <h2 class="visually-hidden">Фильтры выбора гостиниц</h2>
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <p>Инфраструктура:</p>
-        <ul>
-          <li><input type="checkbox" id="pool-checkbox" aria-label="Выбрать бассейн" checked></li>
-          <li><label for="pool-checkbox">Бассейн</label></li>
-          <li><input type="checkbox" id="parking-checkbox" aria-label="Выбрать парковку" disabled></li>
-          <li><label for="parking-checkbox">Парковка</label></li>
-          <li><input type="checkbox" id="wifi-checkbox" aria-label="Выбрать wi-fi"></li>
-          <li><label for="wifi-checkbox">wi-fi</label></li>
-        </ul>
-        <p>Тип жилья:</p>
-        <ul>
-          <li><input type="checkbox" id="hotel-checkbox" aria-label="Выбрать гостиницу" checked>
-          <li> <label for="hotel-checkbox">Гостиница</label>
-          <li><input type="checkbox" id="motel-checkbox" aria-label="Выбрать мотель" checked>
-          <li><label for="motel-checkbox">Мотель</label>
-          <li><input type="checkbox" id="apartaments-checkbox" aria-label="Выбрать апартаменты" checked>
-          <li><label for="apartaments-checkbox">Апартаменты</label>
-        </ul>
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <input type="checkbox" id="pool-checkbox" aria-label="Выбрать бассейн" checked>
+          <label for="pool-checkbox">Бассейн</label>
+          <input type="checkbox" id="parking-checkbox" aria-label="Выбрать парковку" disabled>
+          <label for="parking-checkbox">Парковка</label>
+          <input type="checkbox" id="wifi-checkbox" aria-label="Выбрать wi-fi">
+          <label for="wifi-checkbox">wi-fi</label>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <input type="checkbox" id="hotel-checkbox" aria-label="Выбрать гостиницу" checked>
+          <label for="hotel-checkbox">Гостиница</label>
+          <input type="checkbox" id="motel-checkbox" aria-label="Выбрать мотель" checked>
+          <label for="motel-checkbox">Мотель</label>
+          <input type="checkbox" id="apartaments-checkbox" aria-label="Выбрать апартаменты" checked>
+          <label for="apartaments-checkbox">Апартаменты</label>
+        </fieldset>
         <div>
-        <p>Стоимость в сутки (Р):</p>
-        <p>От 0</p>
-        <p>До 3000</p>
+          <p>Стоимость в сутки (Р):</p>
+          <p>От 0</p>
+          <p>До 3000</p>
         </div>
         <button type="submit" aria-label="Отправить указанные данные и показать результаты поиска">Показать</button>
         <p>Найдено: 3</p>
