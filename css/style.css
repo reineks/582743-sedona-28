@@ -1,0 +1,88 @@
+:root {
+  --hover-lightSkyBlue: #81b3d2;
+  --focus-lightGrey: #b3b3b3;
+  --active-brown: #766357;
+  --hover-cornFlowerBlue: #669ec0;
+  --focus-steelBlue: #5496bd;
+  --black: #000000;
+  
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Trebuchet MS", sans-serif;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.social,
+.site-navigation {
+  list-style: none;
+}
+
+.main-header-nav,
+.hotels-header-nav {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--black);
+}
+
+.site-navigation a {
+  color: var(--black);
+}
+
+.site-navigation a:hover {
+  color: var(--hover-lightSkyBlue);
+}
+
+.site-navigation a:focus {
+  color: var(--focus-lightGrey);
+}
+
+.site-navigation a:active {
+  color: var(--active-brown);
+}
+
+.site-navigation-item-active a:visited{
+  color: var(--active-brown);
+}
+
+.social-item a {
+  width: 46px;
+  height: 48px;
+  background-color: var(--hover-lightSkyBlue); 
+}
+
+.social-item a:hover {
+  background-color: var(--hover-cornFlowerBlue);
+}
+
+.social-item a:focus {
+  background-color: var(--focus-steelBlue);
+}
+
+.name-main-footer-logo {
+  font-size: 14px;
+  line-height: 26px;
+}
+
