@@ -1,10 +1,16 @@
 :root {
   --hover-lightSkyBlue: #81b3d2;
-  --focus-lightGrey: #b3b3b3;
-  --active-brown: #766357;
   --hover-cornFlowerBlue: #669ec0;
-  --focus-steelBlue: #5496bd;
+  --active-steelBlue: #5496bd;
+  --active-brownDark: #503e33;
+  --focus-lightGrey: #b3b3b3;
+  --hover-lightGrey: #EBEBEB;
+  --hover-brown: #604E43;
   --black: #000000;
+  --grey: #a9a9a9;
+  --lightGrey: #F2F2F2;
+  --brown: #766357;
+  --white: #ffffff;
   
 }
 
@@ -32,19 +38,116 @@ body {
 
 a {
   text-decoration: none;
+}
+
+button {
+  appearance: none;
+}
+
+input {
+  appearance: none;
+}
+
+.link {
   color: var(--black);
+  
 }
 
 .social,
+.features-list,
+.features-list-sub,
 .site-navigation {
   list-style: none;
 }
 
-.main-header-nav,
-.hotels-header-nav {
+.features-item-description-number,
+.features-item-description-text,
+.features-list-sub-text {
   font-size: 14px;
+  line-height: 21px;
+}
+
+.main-header-nav,
+.hotels-header-nav,
+.booking-search-field {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.booking-search-btnMin,
+.booking-search-btnPlus {
+  border: 0;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: inherit;
+  color: var(--grey);
+  background: var(--lightGrey);
+}
+
+.footer-contacts,
+.features-title {
+  font-weight: bold;
+}
+
+.features-item-description-title,
+.features-list-sub-title {
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.booking-search-btn {
+  border: 0;
+  border-radius: 0;
+  font-size: 21px;
   line-height: 26px;
-  color: var(--black);
+  font-weight: bold;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--brown);
+}
+
+.booking-search-sendBtn {
+  border: 0;
+  border-radius: 0;
+  font-size: 21px;
+  font-weight: bold;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--hover-lightSkyBlue);
+}
+
+.booking-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+.booking-title {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.booking-search-date {
+  border: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 14px;
+    color: var(--black);
+  background: var(--lightGrey);
+}
+
+.features-description {
+  font-size: 14px;
+}
+
+.social-item a {
+  width: 46px;
+  height: 48px;
+  background-color: var(--hover-lightSkyBlue); 
 }
 
 .site-navigation a {
@@ -55,34 +158,59 @@ a {
   color: var(--hover-lightSkyBlue);
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
   color: var(--focus-lightGrey);
 }
 
-.site-navigation a:active {
-  color: var(--active-brown);
-}
-
-.site-navigation-item-active a:visited{
-  color: var(--active-brown);
-}
-
-.social-item a {
-  width: 46px;
-  height: 48px;
-  background-color: var(--hover-lightSkyBlue); 
+.site-navigation-item-actual a:visited {
+  color: var(--brown);
 }
 
 .social-item a:hover {
   background-color: var(--hover-cornFlowerBlue);
 }
 
-.social-item a:focus {
-  background-color: var(--focus-steelBlue);
+.social-item a:active {
+  background-color: var(--active-steelBlue);
 }
 
-.name-main-footer-logo {
-  font-size: 14px;
-  line-height: 26px;
+.booking-search-btn:hover {
+  background-color: var(--hover-brown);
+}
+
+.booking-search-btn:active {
+  background-color: var(--active-brownDark);
+}
+
+.booking-search-sendBtn:hover {
+  background-color: var(--hover-cornFlowerBlue);
+}
+
+.booking-search-sendBtn:active {
+  background-color: var(--active-steelBlue);
+}
+
+.booking-search-btnMin:hover {
+  color: var(--black);
+}
+
+.booking-search-btnMin:active {
+  color: var(--hover-lightSkyBlue);
+}
+
+.booking-search-btnPlus:hover {
+  color: var(--black);
+}
+
+.booking-search-btnPlus:active {
+  color: var(--hover-lightSkyBlue);
+}
+
+.booking-search-date:focus {
+  background: var(--white);
+}
+
+.booking-search-date:hover {
+  background: var(--hover-lightGrey);
 }
 
