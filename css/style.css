@@ -24,6 +24,7 @@ body {
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--black);
 }
 
@@ -35,6 +36,11 @@ body {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .inn {
@@ -64,6 +70,34 @@ a {
   list-style: none;
 }
 
+.main-header-nav-wrapper {
+  display: flex;
+}
+
+.site-navigation {
+  display: flex;
+}
+
+.features-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.booking-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hotels-result-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .hotels-sort-link a {
   font-size: 12px;
   line-height: 18px;
@@ -87,6 +121,7 @@ a {
   line-height: 21px;
 }
 
+
 .main-header-nav,
 .hotels-header-nav,
 .booking-search-field {
@@ -102,9 +137,10 @@ a {
   background-color: var(--light-grey);
 }
 
-.footer-contacts,
 .features-title,
-.hotels-filter-result
+.footer-contacts-tel,
+.footer-contacts-text,
+.hotels-filter-result,
 .hotels-result-list-title {
   font-weight: 700;
 }
@@ -147,6 +183,7 @@ a {
   background-color: var(--light-grey);
 }
 
+.footer-copyright-text,
 .features-description {
   font-size: 14px;
 }
@@ -296,3 +333,13 @@ a {
 .hotels-result-link-booking:active {
   background-color: var(--active-brown-dark);
 }
+
+.main-footer .container {
+  display: grid;
+  }
+
+  .main-footer {
+    min-height: 120px;
+    padding: 23px 139px 36px 111px;
+  }
+
