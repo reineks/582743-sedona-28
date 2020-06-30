@@ -129,15 +129,15 @@ a {
   text-align: end;
 }
 
-.main-promo-background-wrapper {
+.main-promo-background {
+  background-image: url("../img/intro-welcome.svg"),
+                    url("../img/intro-mask.svg"),
+                    url("../img/background-photo.jpg");
+  background-size: 456px 350px, 1200px 57px, 1200px 508px;
+  background-repeat: no-repeat;
+  background-position: center, bottom, top;
   width: 1200px;
   height: 509px;
- }
-
-.main-promo-background {
-  background-image: url("/sedona/img/intro-welcome.svg"), 
-                    url("/sedona/img/intro-mask.svg"), 
-                    url("/sedona/img/background-photo.jpg");
 }
 
 .features-title-wrapper {
@@ -163,19 +163,58 @@ a {
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  height: 1098px;
+  flex-direction: start;
 }
 
 .features-list-sub {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.features-list-item-container {
+.features-list-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-list-item-container-blue {
   display: flex;
   flex-direction: column;
-  min-width: 400px;
-  text-align: center;
+  width: 400px;
+  height: 256px;
+  color: var(--white);
+  background-color: var(--hover-light-sky-blue);
+}
+
+.features-list-item-container-big-gray {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 330px;
+}
+
+.features-list-item-container-gray {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 256px;
+}
+
+.features-photo-city {
+  background-image: url("../img/city.png");
+  background-size: 800px 256px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 800px;
+  height: 256px;
+}
+
+.features-photo-nature {
+  background-image: url("../img/nature.png");
+  background-size: 800px 256px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 800px;
+  height: 256px;
 }
 
 .booking-title-wrapper {
@@ -338,7 +377,6 @@ margin: 9px 0;
   background-color: var(--light-grey);
 }
 
-.features-title,
 .footer-contacts-tel,
 .footer-contacts-text,
 .hotels-filter-result,
