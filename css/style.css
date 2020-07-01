@@ -77,6 +77,10 @@ a {
   color: var(--black);
 }
 
+.margin-zero {
+  margin: 0;
+}
+
 .button {
   border: 0;
   border-radius: 0;
@@ -100,6 +104,10 @@ a {
   display: flex;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.main-header-nav {
+  position: relative;
 }
 
 .main-header {
@@ -147,29 +155,33 @@ a {
   background-color: var(--hover-light-sky-blue);
   background-image: url("../img/intro-mask.svg"), 
                     url("../img/background-photo.jpg");
-  background-size: 1200px 57px, 1200px 508px;
   background-repeat: no-repeat;
   background-position: bottom, top;
   width: 1200px;
   height: 509px;
+  padding-top: 77px;
 }
 
 .features-title-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 42px 300px 51px 300px;
+  padding: 42px 300px 54px 300px;
   background-color: var(--white);
 }
 
+.features-title-wrapper {
+  margin: 0;
+}
+
 .features-title-margin {
-  margin: 0 0 42px 0;
+  margin-top: 0;
+  margin-bottom: 42px;
 }
 
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: start;
 }
 
 .features-list-item,
@@ -188,7 +200,7 @@ a {
   background-color: var(--hover-light-sky-blue);
 }
 
-.features-list-item-container-big-gray {
+.features-list-item-container-big-grey {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,23 +208,20 @@ a {
   padding: 47px 50px 50px;
 }
 
-.features-list-item-container-gray {
+.features-list-item-container-grey {
   display: flex;
   flex-direction: column;
   width: 400px;
-}
-
-.features-description-margin,
-.features-item-description-title-margin,
-.features-item-description-text-margin {
-  margin: 0;
+  padding: 47px 96px 54px; 
 }
 
 .features-item-description-title {
   width: 170px;
 }
 
-.features-item-description-number-margin {
+.features-item-description-number {
+  font-size: 14px;
+  line-height: 21px;
   margin: 25px 0;
 }
 
@@ -259,6 +268,11 @@ a {
   padding: 17px 25px;
 }
 
+.main-booking-form-wrapper {
+  width: 568px;
+  position: relative;
+}
+
 .form-position {
   position: absolute;
   left: 0;
@@ -269,7 +283,7 @@ a {
 }
 
 .main-map-margin {
-  margin-bottom: -127px;
+  margin-bottom: -120px;
 }
 
 .main-footer {
@@ -285,7 +299,6 @@ a {
 
 .footer-contacts {
   max-width: 261px;
-  padding-top: 2px;
 }
 
 .main-footer-contacts-position {
@@ -360,7 +373,6 @@ a {
 .hotels-filter-text, 
 .features-list-sub-text, 
 .hotels-result-list-text, 
-.features-item-description-number, 
 .features-item-description-text {
   font-size: 14px;
   line-height: 21px;
@@ -433,6 +445,10 @@ a {
   line-height: 21px;
   font-weight: 700;
   border-width: 0px;
+}
+
+.features-item-description-title {
+  font-size: 21px;
 }
 
 .booking-search-send-btn {
