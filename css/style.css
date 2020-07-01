@@ -77,10 +77,6 @@ a {
   color: var(--black);
 }
 
-.margin-zero {
-  margin: 0;
-}
-
 .button {
   border: 0;
   border-radius: 0;
@@ -166,12 +162,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
   padding: 42px 300px 54px 300px;
   background-color: var(--white);
-}
-
-.features-title-wrapper {
-  margin: 0;
 }
 
 .features-title-margin {
