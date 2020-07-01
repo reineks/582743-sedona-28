@@ -29,22 +29,24 @@
       <h1 class="visually-hidden">Информация о городе "Седона"</h1>
       <section>
         <h2 class="visually-hidden">Седона</h2>
-        <div class="main-promo-background"></div>
+        <div class="main-promo-background">
+          <img class="main-promo-image" src="img/intro-welcome.svg" width="456" height="350" alt="Приветствие">
+        </div>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Преимущества города</h2>
         <div class="features-title-wrapper">
-          <p class="features-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="features-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <p class="features-title-margin">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="features-description features-description-margin">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <ol class="features-list list">
           <li class="features-list-item">
             <div class="features-list-item-container-blue">
-              <h3 class="features-item-description-title">Настоящий городок</h3>
-              <span class="features-item-description-number">– №1 –</span>
-              <p class="features-item-description-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              <h3 class="features-item-description-title features-item-description-title-margin">Настоящий городок</h3>
+              <span class="features-item-description-number features-item-description-number-margin">– №1 –</span>
+              <p class="features-item-description-text features-item-description-text-margin">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <div class="features-photo-city"></div>
+            <img class="features-photo" src="img/city.png" width="800" height="256" alt="Вид на город">
             <ul class="features-list-sub list">
               <li>
                 <div class="features-list-item-container-big-gray">
@@ -67,7 +69,7 @@
             </ul>
           </li>
           <li class="features-list-item">
-            <div class="features-photo-nature"></div>
+            <img class="features-photo" src="img/nature.png" width="800" height="256" alt="Вид на горы">
             <div class="features-list-item-container-blue">
               <h3 class="features-item-description-title">Там есть Мост дьявола</h3>
               <span class="features-item-description-number">– №2 –</span>
@@ -98,42 +100,44 @@
         </ol>
       </section>
       <section class="booking">
-        <h2 class="visually-hidden">Бронирование</h2>
+        <h2 class="visually-hidden">Бронирование гостиниц в городе Седона</h2>
         <div class="booking-title-wrapper">
           <span class="booking-title">Заинтересовались?</span>
           <p class="booking-text">Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц
             в Седоне
           </p>
-          <div class="button-wrapper">
-            <button type="button" aria-label="Показать форму поиска гостиниц" class="booking-search-btn button">Поиск
-              гостиницы в Седоне</button>
+          <div class="main-booking-form-wrapper">
+            <div class="button-wrapper">
+              <button type="button" aria-label="Показать форму поиска гостиниц" class="booking-search-btn button">Поиск
+                гостиницы в Седоне</button>
+            </div>
+            <form class="form-position" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="arrival-date" class="booking-search-field">Дата заезда:</label>
+              <input type="text" id="arrival-date" placeholder="24 апреля 2017" aria-label="Ввести дату заезда в номер"
+                class="booking-search-date field" required>
+              <button type="button" aria-label="Открыть календарь для выбора даты"></button>
+              <label for="departure-date" class="booking-search-field">Дата выезда:</label>
+              <input type="text" id="departure-date" placeholder="4 июля 2017" aria-label="Ввести дату выезда из номера"
+                class="booking-search-date field" required>
+              <button type="button" aria-label="Открыть календарь для выбора даты"></button>
+              <label for="adult-amount" class="booking-search-field">Взрослые:</label>
+              <button type="button" aria-label="Уменьшить количество взрослых"
+                class="booking-search-btn-min button">-</button>
+              <input type="number" value="2" min="0" step="1" id="adult-amount" aria-label="Указать количество взрослых"
+                class="field">
+              <button type="button" aria-label="Увеличить количество взрослых"
+                class="booking-search-btn-plus button">+</button>
+              <label for="children-amount" class="booking-search-field">Дети:</label>
+              <button type="button" aria-label="Уменьшить количество детей"
+                class="booking-search-btn-min button">-</button>
+              <input type="number" value="0" min="0" step="1" id="children-amount" aria-label="Указать количество детей"
+                class="field">
+              <button type="button" aria-label="Увеличить количество детей"
+                class="booking-search-btn-plus button">+</button>
+              <button type="submit" aria-label="Отправить указанные данные и показать результаты поиска"
+                class="booking-search-send-btn button">Найти</button>
+            </form>
           </div>
-        </div>
-        <form class="form-position" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="arrival-date" class="booking-search-field">Дата заезда:</label>
-          <input type="text" id="arrival-date" placeholder="24 апреля 2017" aria-label="Ввести дату заезда в номер"
-            class="booking-search-date field" required>
-          <button type="button" aria-label="Открыть календарь для выбора даты"></button>
-          <label for="departure-date" class="booking-search-field">Дата выезда:</label>
-          <input type="text" id="departure-date" placeholder="4 июля 2017" aria-label="Ввести дату выезда из номера"
-            class="booking-search-date field" required>
-          <button type="button" aria-label="Открыть календарь для выбора даты"></button>
-          <label for="adult-amount" class="booking-search-field">Взрослые:</label>
-          <button type="button" aria-label="Уменьшить количество взрослых"
-            class="booking-search-btn-min button">-</button>
-          <input type="number" value="2" min="0" step="1" id="adult-amount" aria-label="Указать количество взрослых"
-            class="field">
-          <button type="button" aria-label="Увеличить количество взрослых"
-            class="booking-search-btn-plus button">+</button>
-          <label for="children-amount" class="booking-search-field">Дети:</label>
-          <button type="button" aria-label="Уменьшить количество детей" class="booking-search-btn-min button">-</button>
-          <input type="number" value="0" min="0" step="1" id="children-amount" aria-label="Указать количество детей"
-            class="field">
-          <button type="button" aria-label="Увеличить количество детей"
-            class="booking-search-btn-plus button">+</button>
-          <button type="submit" aria-label="Отправить указанные данные и показать результаты поиска"
-            class="booking-search-send-btn button">Найти</button>
-        </form>
       </section>
       <section class="map main-map-margin">
         <h2 class="visually-hidden">Расположение города Седона</h2>
@@ -144,7 +148,7 @@
       <div class="footer-contacts main-footer-contacts-position">
         <p class="footer-contacts-text main-footer-contacts-text-margin">#Visitsedona</p>
         <a class="link footer-contacts-tel" href="tel:+74956660266"
-          aria-label="Совершить звонок по номеру телефона">Тел:+7(495)666-02-66</a>
+          aria-label="Совершить звонок по номеру телефона">Тел:+7(495)666-01-66</a>
       </div>
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social list">

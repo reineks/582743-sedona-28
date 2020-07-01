@@ -9,17 +9,16 @@
   --black: #000000;
   --body-grey: #eeeeee;
   --grey: #a9a9a9;
-  --silver: #666666;;
+  --silver: #666666;
   --light-grey: #F2F2F2;
+  --green: #7FFFD4;
   --brown: #766357;
   --white: #ffffff;
-  
 }
 
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "PT Sans", "Trebuchet MS", sans-serif;
   font-weight: 400;
   font-size: 21px;
@@ -43,6 +42,10 @@ body:before {
 
 a {
   text-decoration: none;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -88,13 +91,15 @@ a {
 
 .main-header-logo {
   position: absolute;
-  left: 882.5px;
+  left: calc((100% - 138px)/2);
+  width: 138px;
+  height: 70px;
 }
 
 .main-header-nav-wrapper {
   display: flex;
-  padding-left: 73px;
-  padding-right: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .main-header {
@@ -109,33 +114,42 @@ a {
 
 .site-navigation-item {
   width: 200px;
-  max-height: 70px;
-  text-align: start;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.site-navigation-item:nth-child(4n-2) {
-  padding-left: 28px;
+.site-navigation-item:nth-child(4n+1) {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.site-navigation-item:nth-child(4n+2) {
+  text-align: left;
+  padding-left: 50px;
 }
 
 .site-navigation-item:nth-child(4n-1) {
-  text-align: end;
+  text-align: right;
   padding-right: 15px;
-  margin-left: 213px;
+  margin-left: 300px;
 }
 
 .site-navigation-item:nth-child(4n+4) {
-  text-align: end;
+  text-align: right;
+}
+
+.main-promo-image {
+  width: 456px;
+  height: 350px;
 }
 
 .main-promo-background {
-  background-image: url("../img/intro-welcome.svg"),
-                    url("../img/intro-mask.svg"),
+  background-color: var(--hover-light-sky-blue);
+  background-image: url("../img/intro-mask.svg"), 
                     url("../img/background-photo.jpg");
-  background-size: 456px 350px, 1200px 57px, 1200px 508px;
+  background-size: 1200px 57px, 1200px 508px;
   background-repeat: no-repeat;
-  background-position: center, bottom, top;
+  background-position: bottom, top;
   width: 1200px;
   height: 509px;
 }
@@ -143,21 +157,13 @@ a {
 .features-title-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  min-height: 216px;
+  padding: 42px 300px 51px 300px;
   background-color: var(--white);
 }
 
-.features-title {
-  max-width: 470px;
-  margin-top: 42px;
-}
-
-.features-description {
-  font-size: 14px;
-  max-width: 530px;
-  margin-bottom: 52px;
+.features-title-margin {
+  margin: 0 0 42px 0;
 }
 
 .features-list {
@@ -166,12 +172,8 @@ a {
   flex-direction: start;
 }
 
+.features-list-item,
 .features-list-sub {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.features-list-item {
   display: flex;
   flex-wrap: wrap;
 }
@@ -179,8 +181,9 @@ a {
 .features-list-item-container-blue {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 400px;
-  height: 256px;
+  padding: 47px 50px 50px;
   color: var(--white);
   background-color: var(--hover-light-sky-blue);
 }
@@ -188,31 +191,32 @@ a {
 .features-list-item-container-big-gray {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 400px;
-  height: 330px;
+  padding: 47px 50px 50px;
 }
 
 .features-list-item-container-gray {
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 256px;
 }
 
-.features-photo-city {
-  background-image: url("../img/city.png");
-  background-size: 800px 256px;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 800px;
-  height: 256px;
+.features-description-margin,
+.features-item-description-title-margin,
+.features-item-description-text-margin {
+  margin: 0;
 }
 
-.features-photo-nature {
-  background-image: url("../img/nature.png");
-  background-size: 800px 256px;
-  background-repeat: no-repeat;
-  background-position: center;
+.features-item-description-title {
+  width: 170px;
+}
+
+.features-item-description-number-margin {
+  margin: 25px 0;
+}
+
+.features-photo {
   width: 800px;
   height: 256px;
 }
@@ -220,9 +224,7 @@ a {
 .booking-title-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  min-height: 291px;
   background-color: var(--white);
 }
 
@@ -243,7 +245,6 @@ a {
 .button-wrapper {
   display: flex;
   width: 568px;
-  height: 86px;
   align-items: center;
 }
 
@@ -293,7 +294,7 @@ a {
 }
 
 .main-footer-contacts-text-margin {
-margin: 9px 0;
+  margin: 9px 0;
 }
 
 .main-footer-copyright-position {
@@ -331,7 +332,7 @@ margin: 9px 0;
   font-size: 14px;
   height: 26px;
   margin-right: 8px;
-  }
+}
 
 .hotels-result-list {
   display: flex;
@@ -352,24 +353,27 @@ margin: 9px 0;
   text-decoration-color: var(--hover-light-sky-blue);
 }
 
+.features-description {
+  font-size: 14px;
+}
+
 .hotels-filter-text, 
-.features-list-sub-text,
-.hotels-result-list-text,
-.features-item-description-number,
+.features-list-sub-text, 
+.hotels-result-list-text, 
+.features-item-description-number, 
 .features-item-description-text {
   font-size: 14px;
   line-height: 21px;
 }
 
-
-.main-header-nav,
-.hotels-header-nav,
+.main-header-nav, 
+.hotels-header-nav, 
 .booking-search-field {
   font-size: 14px;
   font-weight: 700;
 }
 
-.booking-search-btn-min,
+.booking-search-btn-min, 
 .booking-search-btn-plus {
   font-size: 14px;
   font-weight: 700;
@@ -377,14 +381,14 @@ margin: 9px 0;
   background-color: var(--light-grey);
 }
 
-.footer-contacts-tel,
-.footer-contacts-text,
-.hotels-filter-result,
+.footer-contacts-tel, 
+.footer-contacts-text, 
+.hotels-filter-result, 
 .hotels-result-list-title {
   font-weight: 700;
 }
 
-.features-list-sub-title,
+.features-list-sub-title, 
 .features-item-description-title {
   line-height: 21px;
   font-weight: 700;
@@ -441,7 +445,7 @@ margin: 9px 0;
 .social-item a {
   width: 46px;
   height: 48px;
-  background-color: var(--hover-light-sky-blue); 
+  background-color: var(--hover-light-sky-blue);
 }
 
 .site-navigation a {
@@ -548,5 +552,3 @@ margin: 9px 0;
 .hotels-result-link-booking:active {
   background-color: var(--active-brown-dark);
 }
-
-
