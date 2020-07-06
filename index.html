@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Главная страница сайта поиска жилья в городе "Седона"</title>
-  <link rel="stylesheet" href="./css/outlin.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -34,13 +34,13 @@
       <section class="features">
         <h2 class="visually-hidden">Преимущества города</h2>
         <div class="features-title-wrapper">
-          <p class="features-title-margin">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="features-title-margin">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="features-description margin-zero">Рассмотрим 5 причин, по которым Седона круче, чем
             Гранд Каньон!</p>
         </div>
         <ol class="features-list list">
           <li class="features-list-item">
-            <div class="features-list-item-container-blue">
+            <div class="features-list-item-container-blue-one">
               <span class="features-item-description-title">Настоящий городок</span>
               <span class="features-item-description-number">– №1 –</span>
               <p class="features-item-description-text margin-zero">Седона - не аттракцион для
@@ -50,28 +50,33 @@
             <ul class="features-list-sub list">
               <li>
                 <div class="features-list-item-container-big-grey">
-                  <span class="features-list-sub-title">Жилье</span>
-                  <p class="features-list-sub-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  <div class="features-list-photo-house"></div>
+                  <span class="features-list-sub-title">Жильё</span>
+                  <p class="features-list-sub-text margin-zero">Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                  </p>
                 </div>
               </li>
               <li>
                 <div class="features-list-item-container-big-grey">
+                  <div class="features-list-photo-eat"></div>
                   <span class="features-list-sub-title">Еда</span>
-                  <p class="features-list-sub-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="features-list-sub-text margin-zero">Всегда заказывайте фирменный бургер, вы не
+                    разочаруетесь!</p>
                 </div>
               </li>
               <li>
                 <div class="features-list-item-container-big-grey">
+                  <div class="features-list-photo-gift"></div>
                   <span class="features-list-sub-title">Сувениры</span>
-                  <p class="features-list-sub-text">Не только китайского, но и местного производства!</p>
+                  <p class="features-list-sub-text margin-zero">Не только китайского, но и местного производства!</p>
                 </div>
               </li>
             </ul>
           </li>
           <li class="features-list-item">
             <img class="features-photo" src="img/nature.png" width="800" height="256" alt="Вид на горы">
-            <div class="features-list-item-container-blue">
-              <span class="features-item-description-title">Там есть Мост дьявола</span>
+            <div class="features-list-item-container-blue-second">
+              <span class="features-item-description-title">Там есть<br>Мост дьявола</span>
               <span class="features-item-description-number">– №2 –</span>
               <p class="features-item-description-text margin-zero">Да, по нему можно пройти! Если конечно вы осмелитесь
               </p>
@@ -93,7 +98,7 @@
           </li>
           <li class="features-list-item">
             <div class="features-list-item-container-grey">
-              <span class="features-item-description-title">Мало туристов</span>
+              <span class="features-item-description-title">Мало<br>туристов</span>
               <span class="features-item-description-number">– № 5 –</span>
               <p class="features-item-description-text margin-zero">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
@@ -108,29 +113,51 @@
         <div class="main-booking-form-wrapper">
           <button type="button" aria-label="Показать форму поиска гостиниц" class="booking-search-btn button">
             Поиск гостиницы в Седоне</button>
-          <form class="form-position" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="arrival-date" class="booking-search-field">Дата заезда:</label>
-            <input type="text" id="arrival-date" placeholder="24 апреля 2017" aria-label="Ввести дату заезда в номер"
-              class="booking-search-date field" required>
-            <button type="button" aria-label="Открыть календарь для выбора даты"></button>
-            <label for="departure-date" class="booking-search-field">Дата выезда:</label>
-            <input type="text" id="departure-date" placeholder="4 июля 2017" aria-label="Ввести дату выезда из номера"
-              class="booking-search-date field" required>
-            <button type="button" aria-label="Открыть календарь для выбора даты"></button>
-            <label for="adult-amount" class="booking-search-field">Взрослые:</label>
-            <button type="button" aria-label="Уменьшить количество взрослых"
-              class="booking-search-btn-min button">-</button>
-            <input type="number" value="2" min="0" step="1" id="adult-amount" aria-label="Указать количество взрослых"
-              class="field">
-            <button type="button" aria-label="Увеличить количество взрослых"
-              class="booking-search-btn-plus button">+</button>
-            <label for="children-amount" class="booking-search-field">Дети:</label>
-            <button type="button" aria-label="Уменьшить количество детей"
-              class="booking-search-btn-min button">-</button>
-            <input type="number" value="0" min="0" step="1" id="children-amount" aria-label="Указать количество детей"
-              class="field">
-            <button type="button" aria-label="Увеличить количество детей"
-              class="booking-search-btn-plus button">+</button>
+          <form class="main-form-wrapper form-position container" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="booking-form-field">
+              <label for="arrival-date" class="booking-search-field">
+                <span class="booking-form-field-text">Дата заезда:</span>
+              </label>
+              <input type="text" id="arrival-date" placeholder="24 апреля 2017" aria-label="Ввести дату заезда в номер"
+                class="booking-search-date-field inn" required>
+              <button type="button" aria-label="Открыть календарь для выбора даты" class="booking-form-field-btn button"></button>
+            </div>
+            <div class="booking-form-field">
+              <label for="departure-date" class="booking-search-field">
+                <span class="booking-form-field-text">Дата выезда:</span>
+              </label>
+              <input type="text" id="departure-date" placeholder="4 июля 2017" aria-label="Ввести дату выезда из номера"
+                class="booking-search-date-field inn" required>
+              <button type="button" aria-label="Открыть календарь для выбора даты" class="booking-form-field-btn button"></button>
+            </div>
+            <div class="booking-form-field-people">
+              <div class="booking-form-field-amount">
+                <label for="adult-amount" class="booking-search-field">
+                  <span class="booking-form-field-adult">Взрослые:</span>
+                </label>
+                <div class="booking-form-amount-field">
+                  <button type="button" aria-label="Уменьшить количество взрослых"
+                    class="booking-search-btn-min button">&ndash;</button>
+                  <input type="number" value="2" min="0" step="1" id="adult-amount"
+                    aria-label="Указать количество взрослых" class="field inn">
+                  <button type="button" aria-label="Увеличить количество взрослых"
+                    class="booking-search-btn-plus button">+</button>
+                </div>
+                </div>
+              <div class="booking-form-field-amount">
+                <label for="children-amount" class="booking-search-field">
+                  <span class="booking-form-field-children">Дети:</span>
+                </label>
+                <div class="booking-form-amount-field-children">
+                  <button type="button" aria-label="Уменьшить количество детей"
+                    class="booking-search-btn-min button">&ndash;</button>
+                  <input type="number" value="0" min="0" step="1" id="children-amount"
+                    aria-label="Указать количество детей" class="field inn">
+                  <button type="button" aria-label="Увеличить количество детей"
+                    class="booking-search-btn-plus button">+</button>
+              </div>
+            </div>
+          </div>
             <button type="submit" aria-label="Отправить указанные данные и показать результаты поиска"
               class="booking-search-send-btn button">Найти</button>
           </form>
@@ -147,24 +174,23 @@
         <a class="link footer-contacts-tel" href="tel:+74956660266"
           aria-label="Совершить звонок по номеру телефона">Тел: +7(495) 666-01-66</a>
       </div>
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="social list">
+      <ul class="social list" aria-label="Социальные сети">
         <li class="social-item">
-          <a href="" aria-label="Перейти в аккаунт города в Twitter"><img src="img/twitter.svg" width="17" height="17"
+          <a href="#" aria-label="Перейти в аккаунт города в Twitter"><img src="img/twitter.svg" width="17" height="17"
               alt="Twitter"></a>
         </li>
         <li class="social-item">
-          <a class="social-link-position" href="" aria-label="Перейти в аккаунт города в Facebook"><img
-              src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a>
+          <a href="#" aria-label="Перейти в аккаунт города в Facebook"><img src="img/fb-icon.svg" width="12" height="22"
+              alt="Facebook"></a>
         </li>
         <li class="social-item">
-          <a class="social-link-position" href="" aria-label="Перейти в аккаунт города в YouTube"><img
-              src="img/youtube.svg" width="20" height="16" alt="YouTube"></a>
+          <a href="#" aria-label="Перейти в аккаунт города в YouTube"><img src="img/youtube.svg" width="20" height="16"
+              alt="YouTube"></a>
         </li>
       </ul>
       <div class="footer-copyright main-footer-copyright-position">
         <p class="footer-copyright-text">Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на сайт разработчика сайта HTML Academy">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на сайт разработчика HTML Academy">
           <img src="img/logo-htmlacademy.svg" width="113" height="39" alt="Логотип разработчика сайта"></a>
       </div>
     </footer>
