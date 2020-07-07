@@ -119,16 +119,18 @@
                 <span class="booking-form-field-text">Дата заезда:</span>
               </label>
               <input type="text" id="arrival-date" placeholder="24 апреля 2017" aria-label="Ввести дату заезда в номер"
-                class="booking-search-date-field inn" required>
-              <button type="button" aria-label="Открыть календарь для выбора даты" class="booking-form-field-btn button"></button>
+                class="booking-search-date-field inn" name="arrival" required>
+              <button type="button" aria-label="Открыть календарь для выбора даты"
+                class="booking-form-field-btn button"></button>
             </div>
             <div class="booking-form-field">
               <label for="departure-date" class="booking-search-field">
                 <span class="booking-form-field-text">Дата выезда:</span>
               </label>
-              <input type="text" id="departure-date" placeholder="4 июля 2017" aria-label="Ввести дату выезда из номера"
+              <input type="text" id="departure-date" placeholder="4 июля 2017" name="departure" aria-label="Ввести дату выезда из номера"
                 class="booking-search-date-field inn" required>
-              <button type="button" aria-label="Открыть календарь для выбора даты" class="booking-form-field-btn button"></button>
+              <button type="button" aria-label="Открыть календарь для выбора даты"
+                class="booking-form-field-btn button"></button>
             </div>
             <div class="booking-form-field-people">
               <div class="booking-form-field-amount">
@@ -139,11 +141,11 @@
                   <button type="button" aria-label="Уменьшить количество взрослых"
                     class="booking-search-btn-min button">&ndash;</button>
                   <input type="number" value="2" min="0" step="1" id="adult-amount"
-                    aria-label="Указать количество взрослых" class="field inn">
+                    aria-label="Указать количество взрослых" class="field inn" name="adult-amount">
                   <button type="button" aria-label="Увеличить количество взрослых"
                     class="booking-search-btn-plus button">+</button>
                 </div>
-                </div>
+              </div>
               <div class="booking-form-field-amount">
                 <label for="children-amount" class="booking-search-field">
                   <span class="booking-form-field-children">Дети:</span>
@@ -152,12 +154,12 @@
                   <button type="button" aria-label="Уменьшить количество детей"
                     class="booking-search-btn-min button">&ndash;</button>
                   <input type="number" value="0" min="0" step="1" id="children-amount"
-                    aria-label="Указать количество детей" class="field inn">
+                    aria-label="Указать количество детей" class="field inn" name="children-amount">
                   <button type="button" aria-label="Увеличить количество детей"
                     class="booking-search-btn-plus button">+</button>
+                </div>
               </div>
             </div>
-          </div>
             <button type="submit" aria-label="Отправить указанные данные и показать результаты поиска"
               class="booking-search-send-btn button">Найти</button>
           </form>

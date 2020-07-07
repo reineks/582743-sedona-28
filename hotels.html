@@ -11,159 +11,170 @@
 
 <body>
   <div class="container">
-  <header class="main-header">
-    <nav class="main-header-nav main-header-nav-wrapper">
-      <a href="index.html" class="main-header-logo">
-        <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип города Седона"></a>
-      <ul class="site-navigation list">
-        <li class="site-navigation-item"><a href="" aria-label="Переход в раздел Информация">Информация</a></li>
-        <li class="site-navigation-item"><a href="" aria-label="Переход в раздел Фото и видео">Фото и Видео</a></li>
-        <li class="site-navigation-item"><a href="" aria-label="Переход в раздел Карта штата">Карта Штата</a></li>
-        <li class="site-navigation-item active"><a aria-label="Переход в раздел Гостиницы">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1 class="visually-hidden">Поиск гостиниц</h1>
-    <section class="hotels-filter">
-      <h2 class="visually-hidden">Фильтры выбора гостиниц</h2>
-      <div class="hotels-background"></div>
-      <form action="https://echo.htmlacademy.ru/" method="post" class="hotels-filter-form">
-        <div class="hotels-filter-form-wrapper">
-        <fieldset class="hotels-filter-infrastructure">
-          <legend class="hotels-filter-title">Инфраструктура:</legend>
-            <div class="hotels-filter-pool">
-              <input class="hotels-filter-checkbox" type="checkbox" id="pool-checkbox" aria-label="Выбрать бассейн" checked>
-              <label for="pool-checkbox" class="hotels-filter-text">Бассейн</label>
-            </div>
-            <div class="hotels-filter-parking">
-              <input type="checkbox" id="parking-checkbox" aria-label="Выбрать парковку" disabled>
-              <label for="parking-checkbox" class="hotels-filter-text">Парковка</label>
-            </div>
-            <div class="hotels-filter-wifi">
-              <input type="checkbox" id="wifi-checkbox" aria-label="Выбрать wi-fi">
-              <label for="wifi-checkbox" class="hotels-filter-text">wi-fi</label>
-            </div>
-        </fieldset>
-        <fieldset class="hotels-filter-apartments">
-          <legend class="hotels-filter-title">Тип жилья:</legend>
-          <div class="hotels-filter-hotel"><input type="checkbox" id="hotel-checkbox" aria-label="Выбрать гостиницу" checked>
-          <label for="hotel-checkbox" class="hotels-filter-text">Гостиница</label></div>
-          <div class="hotels-filter-motel"><input type="checkbox" id="motel-checkbox" aria-label="Выбрать мотель" checked>
-          <label for="motel-checkbox" class="hotels-filter-text">Мотель</label></div>
-          <div class="hotels-filter-apartaments"><input type="checkbox" id="apartaments-checkbox" aria-label="Выбрать апартаменты" checked>
-          <label for="apartaments-checkbox" class="hotels-filter-text">Апартаменты</label></div>
-        </fieldset>
-        </div>
-        <div class="hotels-filter-amount">
-          <span class="hotels-filter-amount-title">Стоимость в сутки (Р):</span>
-          <div class="hotels-filter-amount-value">
-            <span class="hotels-filter-amount-text">От 0</span>
-            <span class="hotels-filter-amount-text">До 3000</span>
+    <header class="main-header">
+      <nav class="main-header-nav main-header-nav-wrapper">
+        <a href="index.html" class="main-header-logo">
+          <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип города Седона"></a>
+        <ul class="site-navigation list">
+          <li class="site-navigation-item"><a href="" aria-label="Переход в раздел Информация">Информация</a></li>
+          <li class="site-navigation-item"><a href="" aria-label="Переход в раздел Фото и видео">Фото и Видео</a></li>
+          <li class="site-navigation-item"><a href="" aria-label="Переход в раздел Карта штата">Карта Штата</a></li>
+          <li class="site-navigation-item active"><a aria-label="Переход в раздел Гостиницы">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Поиск гостиниц</h1>
+      <section class="hotels-filter">
+        <h2 class="visually-hidden">Фильтры выбора гостиниц</h2>
+        <div class="hotels-background"></div>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="hotels-filter-form">
+          <div class="hotels-filter-form-wrapper">
+            <fieldset class="hotels-filter-infrastructure">
+              <legend class="hotels-filter-title">Инфраструктура:</legend>
+              <div class="hotels-filter-pool">
+                <input class="hotels-filter-checkbox" type="checkbox" id="pool-checkbox" name="pool" aria-label="Выбрать бассейн"
+                  checked>
+                <label for="pool-checkbox" class="hotels-filter-text">Бассейн</label>
+              </div>
+              <div class="hotels-filter-parking">
+                <input type="checkbox" id="parking-checkbox" name="parking" aria-label="Выбрать парковку" disabled>
+                <label for="parking-checkbox" class="hotels-filter-text">Парковка</label>
+              </div>
+              <div class="hotels-filter-wifi">
+                <input type="checkbox" id="wifi-checkbox" name="wi-fi" aria-label="Выбрать wi-fi">
+                <label for="wifi-checkbox" class="hotels-filter-text">wi-fi</label>
+              </div>
+            </fieldset>
+            <fieldset class="hotels-filter-apartments">
+              <legend class="hotels-filter-title">Тип жилья:</legend>
+              <div class="hotels-filter-hotel">
+                <input type="checkbox" id="hotel-checkbox" name="hotel" aria-label="Выбрать гостиницу"
+                  checked>
+                <label for="hotel-checkbox" class="hotels-filter-text">Гостиница</label></div>
+              <div class="hotels-filter-motel">
+                <input type="checkbox" id="motel-checkbox" name="motel" aria-label="Выбрать мотель"
+                  checked>
+                <label for="motel-checkbox" class="hotels-filter-text">Мотель</label>
+              </div>
+              <div class="hotels-filter-apartaments">
+                <input type="checkbox" id="apartaments-checkbox" name="apartaments" aria-label="Выбрать апартаменты" 
+                checked>
+                <label for="apartaments-checkbox" class="hotels-filter-text">Апартаменты</label>
+              </div>
+            </fieldset>
           </div>
-          <div class="hotels-filter-amount-range">0</div>
-          <div class="hotels-filter-button-wrapper">
-            <button type="submit" aria-label="Отправить указанные данные и показать результаты поиска"
-          class="hotels-filter-btn button">Показать</button>
+          <div class="hotels-filter-amount">
+            <span class="hotels-filter-amount-title">Стоимость в сутки (Р):</span>
+            <div class="hotels-filter-amount-value">
+              <span class="hotels-filter-amount-text">От 0</span>
+              <span class="hotels-filter-amount-text">До 3000</span>
+            </div>
+            <div class="hotels-filter-amount-range">0</div>
+            <div class="hotels-filter-button-wrapper">
+              <button type="submit" aria-label="Отправить указанные данные и показать результаты поиска"
+                class="hotels-filter-btn button">Показать</button>
+            </div>
           </div>
-        </div>
-      </form>
-      <aside class="hotels-sort-list-borders">
-        <div class="hotels-sort-list-wrapper">
-          <span class="hotels-filter-result">Найдено: 3</span>
-          <span class="hotels-sort-title">Сортировка:</span>
-          <ul class="hotels-sort-list list">
-            <li class="hotels-sort-link-price"><a href="hotels.html" aria-label="Сортировать по цене">По цене</a></li>
-            <li class="hotels-sort-link-type"><a href="hotels.html" aria-label="Сортировать по типу">По типу</a></li>
-            <li class="hotels-sort-link-ranking"><a href="hotels.html" aria-label="Сортировать по рейтингу">По рейтингу</a></li>
+        </form>
+        <aside class="hotels-sort-list-borders">
+          <div class="hotels-sort-list-wrapper">
+            <span class="hotels-filter-result">Найдено: 3</span>
+            <span class="hotels-sort-title">Сортировка:</span>
+            <ul class="hotels-sort-list list">
+              <li class="hotels-sort-link-price"><a href="hotels.html" aria-label="Сортировать по цене">По цене</a></li>
+              <li class="hotels-sort-link-type"><a href="hotels.html" aria-label="Сортировать по типу">По типу</a></li>
+              <li class="hotels-sort-link-ranking"><a href="hotels.html" aria-label="Сортировать по рейтингу">По
+                  рейтингу</a></li>
+            </ul>
+          </div>
+          <ul class="hotels-sort-link-rank-wrapper list">
+            <li class="hotels-sort-link-rank"><a href="hotels.html" aria-label="Сортировать по возрастанию"></a></li>
+            <li class="hotels-sort-link-rank"><a href="hotels.html" aria-label="Сортировать по убыванию"></a>
+            </li>
           </ul>
-        </div>
-        <div class="hotels-sort-link-rank-wrapper">
-          <li class="hotels-sort-link-rank"><a href="hotels.html" aria-label="Сортировать по возрастанию"></a></li>
-          <li class="hotels-sort-link-rank"><a href="hotels.html" aria-label="Сортировать по убыванию"></a>
-          </li>
-        </div>
-      </aside>
-    </section>
-    <section>
-      <div class="hotels-result">
-        <h2 class="visually-hidden">Результаты поиска</h2>
-        <ul class="hotels-result-list list">
-          <li class="hotels-result-item">
-            <img src="img/amara.png" width="135" height="90" alt="Вид отеля Amara" class="hotels-photo">
-            <div class="hotels-result-item-wrapper">
-              <a href="#" class="hotels-result-link-title">Amara Resort &amp; Spa</a>
-              <span class="hotels-result-list-text">Гостиница</span>
-              <span class="hotels-result-list-text">от 4000 Р.</span>
-              <a href="#" aria-label="Переход в раздел с подробной информацией о отеле Amara"
-              class="hotels-result-link-detail">Подробнее</a>
-              <a href="#" aria-label="Забронировать отель Amara" class="hotels-result-link-booking">Забронировать</a>
-            </div>
-            <div class="hotels-result-list-rank"> 
-              <div></div>
-              <span class="hotels-result-list-rank-amount">Рейтинг: 8,5</span>
-            </div>
-          </li>
-          <li class="hotels-result-item">
-            <img src="img/desert.png" width="135" height="90" alt="Вид мотеля Desert" class="hotels-photo">
-            <div class="hotels-result-item-wrapper">
-              <a href="#" class="hotels-result-link-title">Desert Quail Inn</a>
-              <span class="hotels-result-list-text">Мотель</span>
-              <span class="hotels-result-list-text">от 3000 Р.</span>
-              <a href="#" aria-label="Переход в раздел с подробной информацией о мотеле Desert"
-              class="hotels-result-link-detail">Подробнее</a>
-              <a href="#" aria-label="Забронировать мотель Desert" class="hotels-result-link-booking">Забронировать</a>
-            </div>
-            <div class="hotels-result-list-rank"> 
-              <div></div>
-              <span class="hotels-result-list-rank-amount">Рейтинг: 8,9</span>
-            </div>  
-          </li>
-          <li class="hotels-result-item">
-            <img src="img/villas.png" width="135" height="90" alt="Вид апартаментов Villas" class="hotels-photo">
-            <div class="hotels-result-item-wrapper"><a class="hotels-result-link-title">Villas At Poco Diablo</a>
-            <span class="hotels-result-list-text">Апартаменты</span>
-            <span class="hotels-result-list-text">от 2000 Р.</span>
-            <a href="#" aria-label="Переход в раздел с подробной информацией о апартаментах Villas"
-              class="hotels-result-link-detail">Подробнее</a>
-            <a href="#" aria-label="Забронировать апартаменты Villas"
-              class="hotels-result-link-booking">Забронировать</a></div>
-              <div class="hotels-result-list-rank"> 
+        </aside>
+      </section>
+      <section>
+        <div class="hotels-result">
+          <h2 class="visually-hidden">Результаты поиска</h2>
+          <ul class="hotels-result-list list">
+            <li class="hotels-result-item">
+              <img src="img/amara.png" width="135" height="90" alt="Вид отеля Amara" class="hotels-photo">
+              <div class="hotels-result-item-wrapper">
+                <a href="#" class="hotels-result-link-title">Amara Resort &amp; Spa</a>
+                <span class="hotels-result-list-text">Гостиница</span>
+                <span class="hotels-result-list-text">от 4000 Р.</span>
+                <a href="#" aria-label="Переход в раздел с подробной информацией о отеле Amara"
+                  class="hotels-result-link-detail">Подробнее</a>
+                <a href="#" aria-label="Забронировать отель Amara" class="hotels-result-link-booking">Забронировать</a>
+              </div>
+              <div class="hotels-result-list-rank">
+                <div></div>
+                <span class="hotels-result-list-rank-amount">Рейтинг: 8,5</span>
+              </div>
+            </li>
+            <li class="hotels-result-item">
+              <img src="img/desert.png" width="135" height="90" alt="Вид мотеля Desert" class="hotels-photo">
+              <div class="hotels-result-item-wrapper">
+                <a href="#" class="hotels-result-link-title">Desert Quail Inn</a>
+                <span class="hotels-result-list-text">Мотель</span>
+                <span class="hotels-result-list-text">от 3000 Р.</span>
+                <a href="#" aria-label="Переход в раздел с подробной информацией о мотеле Desert"
+                  class="hotels-result-link-detail">Подробнее</a>
+                <a href="#" aria-label="Забронировать мотель Desert"
+                  class="hotels-result-link-booking">Забронировать</a>
+              </div>
+              <div class="hotels-result-list-rank">
+                <div></div>
+                <span class="hotels-result-list-rank-amount">Рейтинг: 8,9</span>
+              </div>
+            </li>
+            <li class="hotels-result-item">
+              <img src="img/villas.png" width="135" height="90" alt="Вид апартаментов Villas" class="hotels-photo">
+              <div class="hotels-result-item-wrapper"><a class="hotels-result-link-title">Villas At Poco Diablo</a>
+                <span class="hotels-result-list-text">Апартаменты</span>
+                <span class="hotels-result-list-text">от 2000 Р.</span>
+                <a href="#" aria-label="Переход в раздел с подробной информацией о апартаментах Villas"
+                  class="hotels-result-link-detail">Подробнее</a>
+                <a href="#" aria-label="Забронировать апартаменты Villas"
+                  class="hotels-result-link-booking">Забронировать</a></div>
+              <div class="hotels-result-list-rank">
                 <div></div>
                 <span class="hotels-result-list-rank-amount">Рейтинг: 9,2</span>
-              </div>  
-          </li>
-        </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer main-footer-wrapper">
+      <div class="footer-contacts main-footer-contacts-position">
+        <p class="footer-contacts-text main-footer-contacts-text-margin">#Visitsedona</p>
+        <a class="link footer-contacts-tel" href="tel:+74956660266"
+          aria-label="Совершить звонок по номеру телефона">Тел: +7(495) 666-01-66</a>
       </div>
-    </section>
-  </main>
-  <footer class="main-footer main-footer-wrapper">
-    <div class="footer-contacts main-footer-contacts-position">
-      <p class="footer-contacts-text main-footer-contacts-text-margin">#Visitsedona</p>
-      <a class="link footer-contacts-tel" href="tel:+74956660266"
-        aria-label="Совершить звонок по номеру телефона">Тел: +7(495) 666-01-66</a>
-    </div>
-    <ul class="social list" aria-label="Социальные сети">
-      <li class="social-item">
-        <a href="#" aria-label="Перейти в аккаунт города в Twitter"><img src="img/twitter.svg" width="17" height="17"
-            alt="Twitter"></a>
-      </li>
-      <li class="social-item">
-        <a href="#" aria-label="Перейти в аккаунт города в Facebook"><img src="img/fb-icon.svg" width="12" height="22"
-            alt="Facebook"></a>
-      </li>
-      <li class="social-item">
-        <a href="#" aria-label="Перейти в аккаунт города в YouTube"><img src="img/youtube.svg" width="20" height="16"
-            alt="YouTube"></a>
-      </li>
-    </ul>
-    <div class="footer-copyright main-footer-copyright-position">
-      <p class="footer-copyright-text">Website by</p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на сайт разработчика HTML Academy">
-        <img src="img/logo-htmlacademy.svg" width="113" height="39" alt="Логотип разработчика сайта"></a>
-    </div>
-  </footer>
-</div>
+      <ul class="social list" aria-label="Социальные сети">
+        <li class="social-item">
+          <a href="#" aria-label="Перейти в аккаунт города в Twitter"><img src="img/twitter.svg" width="17" height="17"
+              alt="Twitter"></a>
+        </li>
+        <li class="social-item">
+          <a href="#" aria-label="Перейти в аккаунт города в Facebook"><img src="img/fb-icon.svg" width="12" height="22"
+              alt="Facebook"></a>
+        </li>
+        <li class="social-item">
+          <a href="#" aria-label="Перейти в аккаунт города в YouTube"><img src="img/youtube.svg" width="20" height="16"
+              alt="YouTube"></a>
+        </li>
+      </ul>
+      <div class="footer-copyright main-footer-copyright-position">
+        <p class="footer-copyright-text">Website by</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на сайт разработчика HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="113" height="39" alt="Логотип разработчика сайта"></a>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>

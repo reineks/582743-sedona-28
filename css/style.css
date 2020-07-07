@@ -650,7 +650,8 @@ a {
 .hotels-sort-list-wrapper {
   display: flex;
   flex-wrap: wrap;
-  max-width: 700px;
+  width: 800px;
+
 }
 
 .hotels-sort-list {
@@ -780,8 +781,7 @@ a {
   width: 110px;
   margin-right: 6px;
   word-break: break-all;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding: 3px 3px;
 }
 
 .hotels-result-link-booking {
