@@ -19,7 +19,7 @@
         <li class="site-navigation-item"><a href="" aria-label="Переход в раздел Информация">Информация</a></li>
         <li class="site-navigation-item"><a href="" aria-label="Переход в раздел Фото и видео">Фото и Видео</a></li>
         <li class="site-navigation-item"><a href="" aria-label="Переход в раздел Карта штата">Карта Штата</a></li>
-        <li class="site-navigation-item active"><a href="" aria-label="Переход в раздел Гостиницы">Гостиницы</a></li>
+        <li class="site-navigation-item active"><a aria-label="Переход в раздел Гостиницы">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -69,16 +69,20 @@
         </div>
       </form>
       <aside class="hotels-sort-list-borders">
-        <span class="hotels-filter-result">Найдено: 3</span>
-        <span class="hotels-sort-link">Сортировка:</span>
-        <ul class="hotels-sort-list list">
-          <li class="hotels-sort-link-active"><a href="hotels.html" aria-label="Сортировать по цене">По цене</a></li>
-          <li class="hotels-sort-link-type"><a href="hotels.html" aria-label="Сортировать по типу">По типу</a></li>
-          <li class="hotels-sort-link-ranking"><a href="hotels.html" aria-label="Сортировать по рейтингу">По рейтингу</a></li>
+        <div class="hotels-sort-list-wrapper">
+          <span class="hotels-filter-result">Найдено: 3</span>
+          <span class="hotels-sort-title">Сортировка:</span>
+          <ul class="hotels-sort-list list">
+            <li class="hotels-sort-link-price"><a href="hotels.html" aria-label="Сортировать по цене">По цене</a></li>
+            <li class="hotels-sort-link-type"><a href="hotels.html" aria-label="Сортировать по типу">По типу</a></li>
+            <li class="hotels-sort-link-ranking"><a href="hotels.html" aria-label="Сортировать по рейтингу">По рейтингу</a></li>
+          </ul>
+        </div>
+        <div class="hotels-sort-link-rank-wrapper">
           <li class="hotels-sort-link-rank"><a href="hotels.html" aria-label="Сортировать по возрастанию"></a></li>
           <li class="hotels-sort-link-rank"><a href="hotels.html" aria-label="Сортировать по убыванию"></a>
           </li>
-        </ul>
+        </div>
       </aside>
     </section>
     <section>
